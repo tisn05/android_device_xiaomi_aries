@@ -178,3 +178,24 @@
 /dev/uio0                 0660   system     system
 /dev/uio1                 0660   system     system
 /dev/uio2                 0660   system     system
+
+# smartmax governor
+/sys/devices/system/cpu/cpufreq smartmax/awake_ideal_freq        0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/boost_duration          0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/boost_freq              0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/debug_mask              0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/down_rate               0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/ignore_nice             0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/input_boost_duration    0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/io_is_busy              0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/max_cpu_load            0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/min_cpu_load            0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/min_sampling_rate       0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/ramp_down_step          0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/ramp_up_during_boost    0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/ramp_up_step            0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/sampling_rate           0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/suspend_ideal_freq      0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/touch_poke_freq         0664    system    system
+/sys/devices/system/cpu/cpufreq smartmax/up_rate                 0664    system    system
+

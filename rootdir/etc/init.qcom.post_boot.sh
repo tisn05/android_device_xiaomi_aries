@@ -70,3 +70,7 @@ case "$target" in
     ;;
 esac
 
+# io tweak
+echo 0 > /sys/block/mmcblk0/queue/add_random
+echo 0 > /sys/block/mmcblk0/queue/iostats
+

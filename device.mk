@@ -70,10 +70,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
-# Spn
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml
-
 # MPDecision configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermald-8064.conf:system/etc/thermald-8064.conf \

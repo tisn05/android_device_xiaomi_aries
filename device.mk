@@ -362,10 +362,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
     debug.mdpcomp.logs=0
 
-# Power Profile
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.aries.power_profile=middle
-
 # Gps
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qmienabled=true

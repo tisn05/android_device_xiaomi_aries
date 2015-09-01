@@ -199,6 +199,8 @@ PRODUCT_BOOT_JARS += \
 
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 
+-include device/xiaomi/aries/lite.mk
+
 # Release
 TARGET_BUILD_TYPE := release
 

@@ -357,5 +357,6 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/cm/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/cm/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd, $(PRODUCT_COPY_FILES))
+    vendor/cm/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/cm/prebuilt/common/bootanimation/720.zip:system/media/bootanimation.zip, $(PRODUCT_COPY_FILES))
 

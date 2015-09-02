@@ -140,6 +140,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/Smooth.ogg:system/media/audio/ringtones/Smooth.ogg \
     $(LOCAL_PATH)/prebuilt/Tune.ogg:system/media/audio/ringtones/Tune.ogg
 
+# Boot animation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/bootanimation.zip:system/media/bootanimation.zip
+
 # USB MTP
 PRODUCT_PACKAGES += \
     librs_jni \

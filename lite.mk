@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     frameworks/base/data/sounds/Alarm_Beep_03.ogg:system/media/audio/alarms/Alarm_Beep_03.ogg \
     frameworks/base/data/sounds/Alarm_Buzzer.ogg:system/media/audio/alarms/Alarm_Buzzer.ogg \
     frameworks/base/data/sounds/Alarm_Rooster_02.ogg:system/media/audio/alarms/Alarm_Rooster_02.ogg \
+    frameworks/base/data/sounds/alarms/ogg/Argon.ogg:system/media/audio/alarms/Argon.ogg \
     frameworks/base/data/sounds/alarms/ogg/Barium.ogg:system/media/audio/alarms/Barium.ogg \
     frameworks/base/data/sounds/alarms/ogg/Carbon.ogg:system/media/audio/alarms/Carbon.ogg \
     frameworks/base/data/sounds/alarms/ogg/Helium.ogg:system/media/audio/alarms/Helium.ogg \
@@ -43,6 +44,7 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     frameworks/base/data/sounds/newwavelabs/CaffeineSnake.ogg:system/media/audio/notifications/CaffeineSnake.ogg \
     frameworks/base/data/sounds/notifications/Canopus.ogg:system/media/audio/notifications/Canopus.ogg \
     frameworks/base/data/sounds/notifications/ogg/Capella.ogg:system/media/audio/notifications/Capella.ogg \
+    frameworks/base/data/sounds/notifications/ogg/Capella.ogg:system/media/audio/notifications/Castor.ogg \
     frameworks/base/data/sounds/notifications/ogg/CetiAlpha.ogg:system/media/audio/notifications/CetiAlpha.ogg \
     frameworks/base/data/sounds/notifications/ogg/Cobalt.ogg:system/media/audio/notifications/Cobalt.ogg \
     frameworks/base/data/sounds/notifications/Cricket.ogg:system/media/audio/notifications/Cricket.ogg \
@@ -84,7 +86,6 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     frameworks/base/data/sounds/notifications/sirius.ogg:system/media/audio/notifications/sirius.ogg \
     frameworks/base/data/sounds/notifications/tweeters.ogg:system/media/audio/notifications/tweeters.ogg \
     frameworks/base/data/sounds/ringtones/ogg/Andromeda.ogg:system/media/audio/ringtones/Andromeda.ogg \
-    frameworks/base/data/sounds/ringtones/ogg/Aquila.ogg:system/media/audio/ringtones/Aquila.ogg \
     frameworks/base/data/sounds/ringtones/BOOTES.ogg:system/media/audio/ringtones/BOOTES.ogg \
     frameworks/base/data/sounds/newwavelabs/Backroad.ogg:system/media/audio/ringtones/Backroad.ogg \
     frameworks/base/data/sounds/newwavelabs/BeatPlucker.ogg:system/media/audio/ringtones/BeatPlucker.ogg \
@@ -221,6 +222,7 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     frameworks/base/data/sounds/notifications/tweeters.ogg:system/media/audio/notifications/tweeters.ogg \
     frameworks/base/data/sounds/ringtones/ogg/Andromeda.ogg:system/media/audio/ringtones/Andromeda.ogg \
     frameworks/base/data/sounds/ringtones/ogg/Aquila.ogg:system/media/audio/ringtones/Aquila.ogg \
+    frameworks/base/data/sounds/ringtones/ogg/ArgoNavis.ogg:system/media/audio/ringtones/ArgoNavis.ogg \
     frameworks/base/data/sounds/ringtones/BOOTES.ogg:system/media/audio/ringtones/BOOTES.ogg \
     frameworks/base/data/sounds/newwavelabs/Backroad.ogg:system/media/audio/ringtones/Backroad.ogg \
     frameworks/base/data/sounds/newwavelabs/BeatPlucker.ogg:system/media/audio/ringtones/BeatPlucker.ogg \

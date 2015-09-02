@@ -174,22 +174,6 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     frameworks/base/data/sounds/ringtones/Vespa.ogg:system/media/audio/ringtones/Vespa.ogg \
     frameworks/base/data/sounds/newwavelabs/World.ogg:system/media/audio/ringtones/World.ogg \
     frameworks/base/data/sounds/ringtones/ogg/Zeta.ogg:system/media/audio/ringtones/Zeta.ogg \
-    frameworks/base/data/sounds/effects/ogg/Dock.ogg:system/media/audio/ui/Dock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Effect_Tick_48k.ogg:system/media/audio/ui/Effect_Tick.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressDelete_120_48k.ogg:system/media/audio/ui/KeypressDelete.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressReturn_120_48k.ogg:system/media/audio/ui/KeypressReturn.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressSpacebar_120_48k.ogg:system/media/audio/ui/KeypressSpacebar.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressStandard_120_48k.ogg:system/media/audio/ui/KeypressStandard.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressInvalid_120_48k.ogg:system/media/audio/ui/KeypressInvalid.ogg \
-    frameworks/base/data/sounds/effects/ogg/Lock.ogg:system/media/audio/ui/Lock.ogg \
-    frameworks/base/data/sounds/effects/ogg/LowBattery.ogg:system/media/audio/ui/LowBattery.ogg \
-    frameworks/base/data/sounds/effects/ogg/Undock.ogg:system/media/audio/ui/Undock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Trusted_48k.ogg:system/media/audio/ui/Trusted.ogg \
-    frameworks/base/data/sounds/effects/ogg/VideoRecord_48k.ogg:system/media/audio/ui/VideoRecord.ogg \
-    frameworks/base/data/sounds/effects/ogg/WirelessChargingStarted.ogg:system/media/audio/ui/WirelessChargingStarted.ogg \
-    frameworks/base/data/sounds/effects/ogg/camera_click_48k.ogg:system/media/audio/ui/camera_click.ogg \
-    frameworks/base/data/sounds/effects/ogg/camera_focus.ogg:system/media/audio/ui/camera_focus.ogg \
     frameworks/base/data/sounds/ringtones/material/ogg/Atria.ogg:system/media/audio/ringtones/Atria.ogg \
     frameworks/base/data/sounds/ringtones/material/ogg/Callisto.ogg:system/media/audio/ringtones/Callisto.ogg \
     frameworks/base/data/sounds/ringtones/material/ogg/Dione.ogg:system/media/audio/ringtones/Dione.ogg \
@@ -326,22 +310,6 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     frameworks/base/data/sounds/ringtones/Vespa.ogg:system/media/audio/ringtones/Vespa.ogg \
     frameworks/base/data/sounds/newwavelabs/World.ogg:system/media/audio/ringtones/World.ogg \
     frameworks/base/data/sounds/ringtones/ogg/Zeta.ogg:system/media/audio/ringtones/Zeta.ogg \
-    frameworks/base/data/sounds/effects/ogg/Dock.ogg:system/media/audio/ui/Dock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Effect_Tick_48k.ogg:system/media/audio/ui/Effect_Tick.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressDelete_120_48k.ogg:system/media/audio/ui/KeypressDelete.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressReturn_120_48k.ogg:system/media/audio/ui/KeypressReturn.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressSpacebar_120_48k.ogg:system/media/audio/ui/KeypressSpacebar.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressStandard_120_48k.ogg:system/media/audio/ui/KeypressStandard.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressInvalid_120_48k.ogg:system/media/audio/ui/KeypressInvalid.ogg \
-    frameworks/base/data/sounds/effects/ogg/Lock.ogg:system/media/audio/ui/Lock.ogg \
-    frameworks/base/data/sounds/effects/ogg/LowBattery.ogg:system/media/audio/ui/LowBattery.ogg \
-    frameworks/base/data/sounds/effects/ogg/Undock.ogg:system/media/audio/ui/Undock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Trusted_48k.ogg:system/media/audio/ui/Trusted.ogg \
-    frameworks/base/data/sounds/effects/ogg/VideoRecord_48k.ogg:system/media/audio/ui/VideoRecord.ogg \
-    frameworks/base/data/sounds/effects/ogg/WirelessChargingStarted.ogg:system/media/audio/ui/WirelessChargingStarted.ogg \
-    frameworks/base/data/sounds/effects/ogg/camera_click_48k.ogg:system/media/audio/ui/camera_click.ogg \
-    frameworks/base/data/sounds/effects/ogg/camera_focus.ogg:system/media/audio/ui/camera_focus.ogg \
     frameworks/base/data/sounds/ringtones/material/ogg/Atria.ogg:system/media/audio/ringtones/Atria.ogg \
     frameworks/base/data/sounds/ringtones/material/ogg/Callisto.ogg:system/media/audio/ringtones/Callisto.ogg \
     frameworks/base/data/sounds/ringtones/material/ogg/Dione.ogg:system/media/audio/ringtones/Dione.ogg \

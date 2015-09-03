@@ -208,8 +208,8 @@ TARGET_BUILD_TYPE := release
 BUILD_NUMBER := $(shell date +%Y%m%d)
 
 # Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-cortex-a15-linux-gnueabihf-4.9-linaro/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-cortex_a15-linux-gnueabihf-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-eabi-5.2/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-architoolchain-linux-gnueabihf-
 TARGET_TOOLCHAIN_ROOT := prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
 TARGET_TOOLS_PREFIX := $(TARGET_TOOLCHAIN_ROOT)/bin/arm-linux-androideabi-
 

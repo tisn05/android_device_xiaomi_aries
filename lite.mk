@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg
     frameworks/base/data/sounds/newwavelabs/CaffeineSnake.ogg:system/media/audio/notifications/CaffeineSnake.ogg \
     frameworks/base/data/sounds/notifications/Canopus.ogg:system/media/audio/notifications/Canopus.ogg \
     frameworks/base/data/sounds/notifications/ogg/Capella.ogg:system/media/audio/notifications/Capella.ogg \
-    frameworks/base/data/sounds/notifications/ogg/Capella.ogg:system/media/audio/notifications/Castor.ogg \
+    frameworks/base/data/sounds/notifications/Castor.ogg:system/media/audio/notifications/Castor.ogg \
     frameworks/base/data/sounds/notifications/ogg/CetiAlpha.ogg:system/media/audio/notifications/CetiAlpha.ogg \
     frameworks/base/data/sounds/notifications/ogg/Cobalt.ogg:system/media/audio/notifications/Cobalt.ogg \
     frameworks/base/data/sounds/notifications/Cricket.ogg:system/media/audio/notifications/Cricket.ogg \

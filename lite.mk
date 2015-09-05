@@ -17,7 +17,6 @@
 # Clean
 PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/sounds/Alarm_Beep_01.ogg:system/media/audio/alarms/Alarm_Beep_01.ogg \
     frameworks/base/data/sounds/Alarm_Beep_02.ogg:system/media/audio/alarms/Alarm_Beep_02.ogg \
-    frameworks/base/data/sounds/Alarm_Beep_03.ogg:system/media/audio/alarms/Alarm_Beep_03.ogg \
     frameworks/base/data/sounds/Alarm_Buzzer.ogg:system/media/audio/alarms/Alarm_Buzzer.ogg \
     frameworks/base/data/sounds/Alarm_Rooster_02.ogg:system/media/audio/alarms/Alarm_Rooster_02.ogg \
     frameworks/base/data/sounds/alarms/ogg/Argon.ogg:system/media/audio/alarms/Argon.ogg \

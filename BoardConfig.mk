@@ -207,6 +207,10 @@ TARGET_BUILD_TYPE := release
 # Buildinfo
 BUILD_NUMBER := $(shell date +%Y%m%d)
 
+# Art
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_HOST_NDEBUG := true
+
 # Toolchain
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-cortex_a15-linux-linaro-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-cortex_a15-linux-gnueabihf-

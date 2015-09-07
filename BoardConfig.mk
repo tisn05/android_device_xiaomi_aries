@@ -201,6 +201,10 @@ PRODUCT_BOOT_JARS += \
 
 -include device/xiaomi/aries/lite.mk
 
+# Dexopt
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_BOOT_IMG_ONLY := false
+
 # Release
 TARGET_BUILD_TYPE := release
 

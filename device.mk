@@ -385,6 +385,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     ro.kernel.checkjni=0
 
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-flags=--no-watch-dog
+
 # Audios
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=MI.ogg \

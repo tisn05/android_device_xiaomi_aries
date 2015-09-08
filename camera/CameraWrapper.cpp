@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012, The CyanogenMod Project
+ * Copyright (C) 2014, The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,27 +42,27 @@ static int camera_get_number_of_cameras(void);
 static int camera_get_camera_info(int camera_id, struct camera_info *info);
 
 static struct hw_module_methods_t camera_module_methods = {
-    open: camera_device_open
+    .open = camera_device_open,
 };
 
 camera_module_t HAL_MODULE_INFO_SYM = {
-    common: {
-         tag: HARDWARE_MODULE_TAG,
-         version_major: 1,
-         version_minor: 0,
-         id: CAMERA_HARDWARE_MODULE_ID,
-         name: "MI2 Camera Wrapper",
-         author: "The CyanogenMod Project",
-         methods: &camera_module_methods,
-         dso: NULL, /* remove compilation warnings */
-         reserved: {0}, /* remove compilation warnings */
+    .common = {
+         .tag = HARDWARE_MODULE_TAG,
+         .module_api_version = CAMERA_MODULE_API_VERSION_1_0,
+         .hal_api_version = HARDWARE_HAL_API_VERSION,
+         .id = CAMERA_HARDWARE_MODULE_ID,
+         .name = "MI2 Camera Wrapper",
+         .author = "The CyanogenMod Project",
+         .methods = &camera_module_methods,
+         .dso = NULL, /* remove compilation warnings */
+         .reserved = {0}, /* remove compilation warnings */
     },
-    get_number_of_cameras: camera_get_number_of_cameras,
-    get_camera_info: camera_get_camera_info,
-    set_callbacks: NULL,
-    get_vendor_tag_ops: NULL,
-    open_legacy: NULL,
-    reserved: {0}
+    .get_number_of_cameras = camera_get_number_of_cameras,
+    .get_camera_info = camera_get_camera_info,
+    .set_callbacks = NULL, /* remove compilation warnings */
+    .get_vendor_tag_ops = NULL, /* remove compilation warnings */
+    .open_legacy = NULL, /* remove compilation warnings */
+    .reserved = {0}, /* remove compilation warnings */
 };
 
 typedef struct wrapper_camera_device {
@@ -390,6 +390,8 @@ static int camera_dump(struct camera_device *device, int fd)
     return VENDOR_CALL(device, dump, fd);
 }
 
+extern "C" void heaptracker_free_leaked_memory(void);
+
 static int camera_device_close(hw_device_t *device)
 {
     int ret = 0;
@@ -411,7 +413,9 @@ static int camera_device_close(hw_device_t *device)
         free(wrapper_dev->base.ops);
     free(wrapper_dev);
 done:
-
+#ifdef HEAPTRACKER
+    heaptracker_free_leaked_memory();
+#endif
     return ret;
 }
 
@@ -482,7 +486,7 @@ static int camera_device_open(const hw_module_t *module, const char *name,
         memset(camera_ops, 0, sizeof(*camera_ops));
 
         camera_device->base.common.tag = HARDWARE_DEVICE_TAG;
-        camera_device->base.common.version = 0;
+        camera_device->base.common.version = CAMERA_DEVICE_API_VERSION_1_0;
         camera_device->base.common.module = (hw_module_t *)(module);
         camera_device->base.common.close = camera_device_close;
         camera_device->base.ops = camera_ops;

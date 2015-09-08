@@ -226,3 +226,21 @@
 /sys/devices/system/cpu/cpufreq intelliactive/up_threshold_any_cpu_freq    0664    system    system
 /sys/devices/system/cpu/cpufreq intelliactive/up_threshold_any_cpu_load    0664    system    system
 
+# governor
+/sys/devices/system/cpu/cpu0/scaling_governor    0664    system    system
+/sys/devices/system/cpu/cpu0/scaling_max_freq    0664    system    system
+/sys/devices/system/cpu/cpu0/scaling_min_freq    0664    system    system
+/sys/devices/system/cpu/cpu0/scaling_governor    0664    system    system
+/sys/devices/system/cpu/cpu1/scaling_max_freq    0664    system    system
+/sys/devices/system/cpu/cpu1/scaling_min_freq    0664    system    system
+/sys/devices/system/cpu/cpu1/scaling_governor    0664    system    system
+/sys/devices/system/cpu/cpu1/scaling_max_freq    0664    system    system
+/sys/devices/system/cpu/cpu2/scaling_min_freq    0664    system    system
+/sys/devices/system/cpu/cpu2/scaling_governor    0664    system    system
+/sys/devices/system/cpu/cpu2/scaling_max_freq    0664    system    system
+/sys/devices/system/cpu/cpu2/scaling_min_freq    0664    system    system
+/sys/devices/system/cpu/cpu3/scaling_governor    0664    system    system
+/sys/devices/system/cpu/cpu3/scaling_max_freq    0664    system    system
+/sys/devices/system/cpu/cpu3/scaling_min_freq    0664    system    system
+/sys/devices/system/cpu/cpu3/scaling_governor    0664    system    system
+

@@ -123,6 +123,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
+# PowerProfile
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerprofile.sh:system/bin/powerprofile.sh
+
 # Prebuilts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/01.apk:system/priv-app/01/01.apk \

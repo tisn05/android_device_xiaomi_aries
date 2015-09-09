@@ -192,10 +192,7 @@ BOARD_USES_SECURE_SERVICES := true
 SUPERUSER_EMBEDDED := true
 
 PRODUCT_BOOT_JARS += \
-    qcom.fmradio \
-    qcmediaplayer \
-    org.codeaurora.Performance \
-    tcmiface
+    qcmediaplayer
 
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 

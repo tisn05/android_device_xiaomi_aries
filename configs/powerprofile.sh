@@ -35,10 +35,10 @@ case "$powermode" in
 		echo 1566000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
 		echo 1566000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
 		echo 1566000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
-		echo 384000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-		echo 384000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-		echo 384000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-		echo 384000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
 		echo 400000000 > /sys/class/kgsl/kgsl-3d0/max_gpuclk
 		echo 1 > /sys/devices/system/cpu/sched_mc_power_savings
 	;;
@@ -53,10 +53,10 @@ case "$powermode" in
 		echo 1242000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
 		echo 1242000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
 		echo 1242000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
-		echo 384000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-		echo 384000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-		echo 384000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-		echo 384000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+		echo 192000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
 		echo 320000000 > /sys/class/kgsl/kgsl-3d0/max_gpuclk
 		echo 2 > /sys/devices/system/cpu/sched_mc_power_savings
 	;;

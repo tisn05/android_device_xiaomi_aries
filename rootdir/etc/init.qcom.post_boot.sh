@@ -75,4 +75,20 @@ echo 0 > /sys/block/mmcblk0/queue/add_random
 echo 0 > /sys/block/mmcblk0/queue/iostats
 # decrease gpu vdd levels
 echo -e "900\n980\n1050\n" > /sys/devices/system/cpu/cpu0/cpufreq/gpu_mv_table
+# decrease cpu vdd levels
+echo "192000 850000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "384000 875000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "486000 875000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "594000 875000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "702000 875000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "810000 885000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "918000 900000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1026000 925000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1134000 935000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1242000 950000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1350000 960000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1458000 975000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1566000 1000000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1674000 1025000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+echo "1728000 1050000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 

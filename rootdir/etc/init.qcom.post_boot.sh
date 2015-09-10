@@ -73,4 +73,6 @@ esac
 # io tweak
 echo 0 > /sys/block/mmcblk0/queue/add_random
 echo 0 > /sys/block/mmcblk0/queue/iostats
+# decrease gpu vdd levels
+echo -e "900\n980\n1050\n" > /sys/devices/system/cpu/cpu0/cpufreq/gpu_mv_table
 

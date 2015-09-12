@@ -229,12 +229,12 @@ service powerprofile /system/bin/powerprofile.sh
     oneshot
     disabled
 
-on property:sys.perf.profile=2
+on property:powerhal=2
     start powerprofile
 
-on property:sys.perf.profile=1
+on property:powerhal=1
     start powerprofile
 
-on property:sys.perf.profile=0
+on property:powerhal=0
     start powerprofile
 

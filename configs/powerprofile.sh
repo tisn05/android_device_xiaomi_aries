@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-powermode=`getprop powerhal`
+powermode=`getprop sys.perf.profile`
 case "$powermode" in
 	"2")
 		stop mpdecision

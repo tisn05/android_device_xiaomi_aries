@@ -209,7 +209,7 @@ TARGET_BUILD_TYPE := release
 # Buildinfo
 BUILD_NUMBER := $(shell date +%Y%m%d)
 
-# Art
+# ART
 ART_BUILD_TARGET_NDEBUG := true
 ART_BUILD_HOST_NDEBUG := true
 

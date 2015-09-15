@@ -23,7 +23,7 @@ LOCAL_PATH := device/xiaomi/aries
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# This device is xhdpi.  However the platform doesn't
+# This device is xhdpi. However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
 # we do this little trick to fall back to the hdpi version
 # if the xhdpi doesn't exist.
@@ -160,8 +160,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    busybox \
-    Torch
+    busybox
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -393,7 +392,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-flags=--no-watch-dog
 
-# Audios
+# Sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=MI.ogg \
     ro.config.notification_sound=pizzicato.ogg \

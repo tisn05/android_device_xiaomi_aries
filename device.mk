@@ -162,10 +162,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     busybox
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8960
-
 # syspart selector
 PRODUCT_PACKAGES += \
     syspart_select

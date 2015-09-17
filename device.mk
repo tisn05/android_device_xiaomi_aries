@@ -298,6 +298,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=0 \
     ro.telephony.call_ring.multiple=0
 
+# default network type
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=1
+
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 

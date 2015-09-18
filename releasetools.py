@@ -195,6 +195,3 @@ def trunc_to_null(s):
     return s[:s.index('\0')]
   else:
     return s
-
-def FullOTA_PostValidate(info):
-    info.script.AppendExtra('delete("/system/etc/recovery-resource.dat")');

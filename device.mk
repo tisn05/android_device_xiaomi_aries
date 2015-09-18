@@ -125,7 +125,6 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/01.apk:system/priv-app/01/01.apk \
     $(LOCAL_PATH)/prebuilt/Forest.ogg:system/media/audio/alarms/Forest.ogg \
     $(LOCAL_PATH)/prebuilt/Journey.ogg:system/media/audio/alarms/Journey.ogg \
     $(LOCAL_PATH)/prebuilt/Smooth.ogg:system/media/audio/alarms/Smooth.ogg \
@@ -286,6 +285,10 @@ PRODUCT_PACKAGES += \
     init.qcom.mdm_links.sh \
     init.qcom.modem_links.sh \
     init.target.rc
+
+# RootExplorer
+PRODUCT_PACKAGES += \
+    01
 
 # Regional
 PRODUCT_PROPERTY_OVERRIDES += \

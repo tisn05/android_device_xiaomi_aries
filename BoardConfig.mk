@@ -185,7 +185,8 @@ BOARD_SEPOLICY_DIRS += \
     device/xiaomi/aries/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    btnvtool.te
+    btnvtool.te \
+    syspart_select.te
 
 BOARD_USES_SECURE_SERVICES := true
 

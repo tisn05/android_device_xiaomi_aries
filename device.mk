@@ -157,6 +157,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     busybox
 
+# syspart selector
+PRODUCT_PACKAGES += \
+    syspart_select
+
 # QCOM Display
 PRODUCT_PACKAGES += \
     libgenlock \

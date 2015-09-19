@@ -226,3 +226,6 @@
 /sys/devices/system/cpu/cpufreq intelliactive/up_threshold_any_cpu_freq    0664    system    system
 /sys/devices/system/cpu/cpufreq intelliactive/up_threshold_any_cpu_load    0664    system    system
 
+# gpu mv table
+/sys/devices/system/cpu/cpu* cpufreq/gpu_mv_table    0664    system    system
+

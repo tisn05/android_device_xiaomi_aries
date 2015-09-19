@@ -70,6 +70,9 @@ case "$target" in
     ;;
 esac
 
+# cpu mv table
+chmod 664 /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+
 # tweak
 echo 0 > /sys/block/mmcblk0/queue/add_random
 echo 0 > /sys/block/mmcblk0/queue/iostats

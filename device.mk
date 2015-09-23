@@ -260,6 +260,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=pizzicato.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg
 
+# ADB Debug
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+    ro.debuggable=1
+
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \

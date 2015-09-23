@@ -178,3 +178,5 @@ BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw/
 
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 
+-include device/xiaomi/aries/lite.mk
+

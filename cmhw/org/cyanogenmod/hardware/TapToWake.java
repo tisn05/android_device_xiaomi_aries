@@ -36,4 +36,3 @@ public class TapToWake {
         return FileUtils.writeLine(CONTROL_PATH, (state ? "1" : "0"));
     }
 }
-

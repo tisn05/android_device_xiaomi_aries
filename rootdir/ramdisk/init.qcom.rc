@@ -215,7 +215,7 @@ on boot
     write /proc/sys/net/ipv6/conf/rmnet_usb3/accept_ra 2
 
     write /sys/module/subsystem_restart/parameters/restart_level 3
-    write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
     write /sys/module/wcnss_ssr_8960/parameters/enable_riva_ssr 1
 
     # Allow write permission for rtc wakealarm

@@ -176,6 +176,8 @@ TARGET_USES_LOGD := false
 # CM Hardware
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw/
 
+TARGET_POWERHAL_VARIANT := cm
+
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 
 -include device/xiaomi/aries/lite.mk

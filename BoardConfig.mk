@@ -28,6 +28,11 @@ TARGET_BOARD_INFO_FILE := $(LOCAL_PATH)/board-info.txt
 
 TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
 
+# Vendor Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_aries.c
+
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp -DQCOM_HARDWARE
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp -DQCOM_HARDWARE

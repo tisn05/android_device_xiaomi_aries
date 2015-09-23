@@ -186,7 +186,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=15 \
+    wifi.supplicant_scan_interval=120 \
     wlan.driver.ath=0
 
 # QC Perf
@@ -275,6 +275,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Network
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=1
+
+# Regional
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.timezone=Asia/Shanghai
 
 # ADB Debug
 ADDITIONAL_DEFAULT_PROPERTIES += \

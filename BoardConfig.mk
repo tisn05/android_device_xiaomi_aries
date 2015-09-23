@@ -173,5 +173,8 @@ BOARD_USES_LEGACY_MMAP := true
 MALLOC_IMPL := dlmalloc
 TARGET_USES_LOGD := false
 
+# CM Hardware
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw/
+
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 

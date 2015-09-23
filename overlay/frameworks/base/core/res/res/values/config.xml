@@ -93,6 +93,7 @@
         <item>0</item>
         <item>0</item>
         <item>0</item>
+        <item>0</item>
     </integer-array>
 
     <!-- Minimum screen brightness setting allowed by the power manager.

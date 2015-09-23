@@ -246,6 +246,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.service.adb.enable=1 \
     persist.sys.usb.config=mtp \
     ro.vold.umsdirtyratio=50 \
     persist.sys.isUsbOtgEnabled=1

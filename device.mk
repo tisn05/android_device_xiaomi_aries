@@ -276,6 +276,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8960 \
     copybit.msm8960 \
     memtrack.msm8960 \
+    lights.msm8960 \
     libemoji
 
 # Audio

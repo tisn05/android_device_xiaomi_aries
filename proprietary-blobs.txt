@@ -48,7 +48,6 @@
 /system/etc/firmware/vidc_1080p.fw
 /system/lib/hw/sensors.msm8960.so
 /system/lib/hw/power.aries.so
-/system/lib/hw/lights.msm8960.so
 /system/lib/hw/camera.msm8960.so
 /system/lib/hw/gps.default.so
 /system/lib/libacdbloader.so

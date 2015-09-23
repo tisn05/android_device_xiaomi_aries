@@ -137,6 +137,23 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
+# Prebuilts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/sounds/Forest.ogg:system/media/audio/alarms/Forest.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Journey.ogg:system/media/audio/alarms/Journey.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Smooth.ogg:system/media/audio/alarms/Smooth.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/SMS.ogg:system/media/audio/notifications/SMS.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Chorus.ogg:system/media/audio/ringtones/Chorus.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Journey.ogg:system/media/audio/ringtones/Journey.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Leisure.ogg:system/media/audio/ringtones/Leisure.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/MI.ogg:system/media/audio/ringtones/MI.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Orange.ogg:system/media/audio/ringtones/Orange.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Over_the_horizon.ogg:system/media/audio/ringtones/Over_the_horizon.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/S4_Over_the_horizon.ogg:system/media/audio/ringtones/S4_Over_the_horizon.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Smooth.ogg:system/media/audio/ringtones/Smooth.ogg \
+    $(LOCAL_PATH)/prebuilt/sounds/Tune.ogg:system/media/audio/ringtones/Tune.ogg \
+    $(LOCAL_PATH)/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -240,7 +257,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \
-    busybox
+    busybox \
+    01
 
 # Filesystem tools
 PRODUCT_PACKAGES += \

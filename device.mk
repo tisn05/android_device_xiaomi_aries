@@ -164,15 +164,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
-# Audio Configuration
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.vns.mode=2
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cdma.home.operator.numeric=46003 \
-    ro.telephony.default_cdma_sub=0 \
-    persist.omh.enabled=true
-
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=0 \
@@ -241,12 +232,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.composition.type=dyn \
     persist.hwc.mdpcomp.enable=true \
-    debug.mdpcomp.logs=0 \
-    ro.sf.lcd_density=320
+    debug.mdpcomp.logs=0
+
+# ADB & USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.adb.enable=1 \
+    persist.sys.usb.config=mtp
+
+# ADB Debug
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+    ro.debuggable=1
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.service.adb.enable=1 \
     persist.sys.usb.config=mtp \
     ro.vold.umsdirtyratio=50 \
     persist.sys.isUsbOtgEnabled=1
@@ -279,12 +279,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Regional
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.timezone=Asia/Shanghai
-
-# ADB Debug
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0 \
-    ro.debuggable=1
 
 PRODUCT_PACKAGES += \
     librs_jni \

@@ -254,6 +254,12 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qmienabled=true
 
+# Sounds
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=MI.ogg \
+    ro.config.notification_sound=pizzicato.ogg \
+    ro.config.alarm_alert=Alarm_Beep_03.ogg
+
 PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory \

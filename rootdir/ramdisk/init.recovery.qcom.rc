@@ -1,0 +1,3 @@
+on init
+    exec /sbin/syspart_select auto
+

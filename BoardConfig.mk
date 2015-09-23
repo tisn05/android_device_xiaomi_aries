@@ -191,7 +191,8 @@ BOARD_SEPOLICY_DIRS += \
     device/xiaomi/aries/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    btnvtool.te
+    btnvtool.te \
+    syspart_select.te
 
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 

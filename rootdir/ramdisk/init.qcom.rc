@@ -47,6 +47,8 @@ on init
     symlink /storage/emulated/legacy /storage/sdcard0
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
 
+    exec /sbin/syspart_select auto
+
 on fs
     mount_all ./fstab.qcom
     mount vfat /dev/block/platform/msm_sdcc.1/by-name/modem /firmware wait ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337

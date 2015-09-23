@@ -58,6 +58,8 @@ TARGET_KRAIT_BIONIC_BBTHRESH := 64
 TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 # Kernel
+TARGET_KERNEL_SOURCE := kernel/xiaomi/aries
+TARGET_KERNEL_CONFIG := cyanogenmod_aries_defconfig
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x02000000
@@ -85,8 +87,6 @@ AUDIO_FEATURE_ENABLED_FM := true
 
 BOARD_EGL_CFG := $(LOCAL_PATH)/rootdir/etc/egl.cfg
 TARGET_USES_QCOM_BSP := true
-BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
-BOARD_HAVE_CSD_FAST_CALL_SWITCH := true
 
 # QCOM enhanced A/V
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
@@ -96,6 +96,8 @@ TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+
+# GPU
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 HAVE_ADRENO_SOURCE := false
 
@@ -122,6 +124,8 @@ QCOM_OUTPUT_FLAGS_ENABLED := true
 QCOM_USBAUDIO_ENABLED := true
 QCOM_FLUENCE_ENABLED := true
 QCOM_MULTI_VOICE_SESSION_ENABLED := true
+BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
+BOARD_HAVE_CSD_FAST_CALL_SWITCH := true
 
 # Camera
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
@@ -160,10 +164,7 @@ HAVE_ADRENO_SOURCE := false
 SUPERUSER_EMBEDDED := true
 
 PRODUCT_BOOT_JARS += \
-    qcom.fmradio \
-    qcmediaplayer \
-    org.codeaurora.Performance \
-    tcmiface
+    qcmediaplayer
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -176,7 +177,9 @@ TARGET_USES_LOGD := false
 # CM Hardware
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw/
 
+# PowerHAL
 TARGET_POWERHAL_VARIANT := cm
+TARGET_POWERHAL_NO_TOUCH_BOOST := true
 
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 

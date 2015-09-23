@@ -272,6 +272,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-flags=--no-watch-dog
 
+# Network
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=1
+
 # ADB Debug
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \

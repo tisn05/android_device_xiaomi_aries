@@ -22,6 +22,7 @@
 -->
 
 <mms_config version="4">
+
     <!-- Flag indicating whether MMS should be enabled -->
     <bool name="enabledMMS">true</bool>
 

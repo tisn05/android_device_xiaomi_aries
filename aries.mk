@@ -16,16 +16,16 @@
 
 -include device/xiaomi/aries/utils.mk
 
-$(call inherit-product, device/xiaomi/aries/device.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_NAME := aries
 PRODUCT_DEVICE := aries
+PRODUCT_NAME := aries
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 2
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+$(call inherit-product, device/xiaomi/aries/device.mk)
 
 $(call inherit-product-if-exists, vendor/xiaomi/aries/aries-vendor.mk)
 

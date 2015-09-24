@@ -1,0 +1,2 @@
+unix_socket_connect(camera, sensors, sensors)
+allow camera sensors_socket:sock_file read;

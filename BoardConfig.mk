@@ -185,16 +185,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_POWERHAL_VARIANT := cm
 TARGET_POWERHAL_NO_TOUCH_BOOST := true
 
-# SELinux
--include device/qcom/sepolicy/sepolicy.mk
-
-BOARD_SEPOLICY_DIRS += \
-    device/xiaomi/aries/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    btnvtool.te \
-    syspart_select.te
-
 -include vendor/xiaomi/aries/BoardConfigVendor.mk
 
 -include device/xiaomi/aries/lite.mk

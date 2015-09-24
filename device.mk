@@ -187,7 +187,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so
+    ro.vendor.extension_library=libqti-perfd-client.so \
     com.qc.hardware=true \
     ro.qc.sdk.sensors.gestures=false \
     ro.qc.sensors.wl_dis=true

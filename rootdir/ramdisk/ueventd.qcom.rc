@@ -1,3 +1,31 @@
+#
+# Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of The Linux Foundation nor
+#       the names of its contributors may be used to endorse or promote
+#       products derived from this software without specific prior written
+#       permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
 /dev/uinput               0660   system     bluetooth
 /dev/genlock              0666   system     system
 /dev/kgsl                 0666   system     system
@@ -8,6 +36,8 @@
 /dev/rtc0                 0600   system     system
 /dev/smd0                 0660   system     system
 /dev/smd4                 0660   system     system
+/dev/smd5                 0666   system     system
+/dev/smd6                 0666   system     system
 /dev/smd_cxm_qmi          0640   radio      radio
 /dev/smd7                 0660   bluetooth  bluetooth
 /dev/rfcomm0              0660   bluetooth  bluetooth
@@ -73,13 +103,14 @@
 /dev/msm_vidc_enc_sec     0660   system     audio
 /dev/msm_rotator          0664   system     system
 
-#permissions for audio
+# permissions for audio
 /dev/msm_qcelp            0660   system     audio
 /dev/msm_evrc             0660   system     audio
 /dev/msm_wma              0660   system     audio
 /dev/msm_wmapro           0660   system     audio
 /dev/msm_amrnb            0660   system     audio
 /dev/msm_amrwb            0660   system     audio
+/dev/msm_amrwbplus        0660   system     audio
 /dev/msm_aac              0660   system     audio
 /dev/msm_multi_aac        0660   system     audio
 /dev/msm_aac_in           0660   system     audio
@@ -90,11 +121,11 @@
 /dev/smd2                 0660   bluetooth  bluetooth
 /dev/ttyHSL1              0660   system     system
 /dev/mdm                  0660   system     radio
-/sys/devices/virtual/smdpkt/smdcntl*       open_timeout   0664 radio radio
+/sys/devices/virtual/smdpkt/smdcntl*        open_timeout   0664 radio radio
 /dev/sdio_tty_ciq_00      0660   system     system
 /dev/tty_sdio_00          0660   system     system
 /dev/ttyGS0               0660   system     system
-/dev/i2c-5                0660   media       media
+/dev/i2c-5                0660   media      media
 /dev/hw_random            0640   root       root
 
 # try to fix some
@@ -123,7 +154,7 @@
 /dev/sysmatdrv            0660   system     system
 /dev/ttyHSL2              0660   system     audio
 /dev/ttyHS2               0660   system     audio
-/dev/oncrpc/300000ba:00010000  0660   system     drmrpc
+/dev/oncrpc/300000ba:00010000    0660       system     drmrpc
 /dev/radio0               0644   system     system
 /dev/msm_voicememo        0660   system     audio
 /dev/gss                  0660   gps        gps
@@ -135,33 +166,6 @@
 /dev/msm_dsps             0660   system     system
 /dev/ks_hsic_bridge       0660   system     system
 /dev/efs_hsic_bridge      0660   system     system
-# NXP PN544 NFC
 /dev/pn544                0660   nfc        nfc
-
-
-# wlan
 /dev/wcnss_wlan           0660   system     system
 
-/sys/devices/system/cpu/cpufreq ondemand/boostfreq   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/boostpulse  0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/boosttime   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/sampling_rate   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/io_is_busy      0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/down_differential   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/powersave_bias  0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/sampling_down_factor    0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/up_threshold   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/up_threshold_multi_core   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/down_differential_multi_core   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/optimal_freq   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/sync_freq   0664    system  system
-/sys/devices/system/cpu/cpufreq ondemand/up_threshold_any_cpu_load   0664    system  system
-
-/sys/devices/system/cpu/cpufreq interactive/boostpulse  0664    system  system
-/sys/devices/system/cpu/cpufreq interactive/timer_rate  0664    system  system
-/sys/devices/system/cpu/cpufreq interactive/min_sample_rate 0664    system  system
-/sys/devices/system/cpu/cpufreq interactive/min_sample_time 0664    system  system
-/sys/devices/system/cpu/cpufreq interactive/hispeed_freq    0664    system  system
-/sys/devices/system/cpu/cpufreq interactive/go_hispeed_load 0664    system  system
-/sys/devices/system/cpu/cpufreq interactive/above_hispeed_delay 0664    system  system
-/sys/devices/system/cpu/cpufreq interactive/io_is_busy      0664    system  system

@@ -436,6 +436,9 @@ on post-fs-data
     chmod 0664 /sys/class/timed_output/vibrator/amp
     restorecon /sys/class/timed_output/vibrator/amp
 
+    # cpu vdd table
+    chmod 666 /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+
 on property:init.svc.surfaceflinger=stopped
     stop ppd
     stop hdmid

@@ -62,6 +62,12 @@ on property:persist.sys.display_ce=10
 on property:persist.sys.display_ce=11
     write /sys/devices/virtual/graphics/fb0/msm_fb_dispparam 16
 
+service wcnss-service /system/bin/wcnss_service
+    class main
+    user system
+    group system wifi radio
+    oneshot
+
 service powerprofile /system/bin/powerprofile.sh
     user root
     oneshot

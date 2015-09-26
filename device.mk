@@ -340,6 +340,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8960
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8960
+
 # Audio
 PRODUCT_PACKAGES += \
     audio_policy.msm8960 \

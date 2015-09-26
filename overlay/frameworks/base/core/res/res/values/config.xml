@@ -210,7 +210,7 @@
     <dimen name="config_minScalingSpan">27.0mm</dimen>
 
     <!-- The default iface on which to monitor data use -->
-    <string name="config_datause_iface" translatable="false">rmnet_usb0</string>
+    <string name="config_datause_iface" translatable="false">rmnet0</string>
 
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">false</bool>

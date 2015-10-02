@@ -58,13 +58,13 @@ case "$powermode" in
 		echo "810000 887500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 		echo "918000 900000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 		echo "1026000 925000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1134000 950000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1242000 962500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1350000 975000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1458000 1000000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1566000 1037500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1674000 1075000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1728000 1100000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1134000 937500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1242000 950000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1350000 962500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1458000 975000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1566000 1000000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1674000 1025000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1728000 1050000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 	;;
 	"0")
 		echo "smartmax_eps" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -90,17 +90,17 @@ case "$powermode" in
 		echo "810000 887500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 		echo "918000 900000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 		echo "1026000 925000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1134000 950000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1242000 962500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1350000 975000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1458000 1000000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1566000 1037500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1674000 1075000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
-		echo "1728000 1100000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1134000 937500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1242000 950000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1350000 962500" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1458000 975000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1566000 1000000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1674000 1025000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
+		echo "1728000 1050000" > /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
 	;;
 esac
 
-# Performance: CPU --> PVS3 & GPU --> Default
-# Balance:     CPU --> PVS4 & GPU --> PowerSave
-# PowerSave:   CPU --> PVS4 & GPU --> PowerSaver
+# Performance: CPU --> PVS3 & GPU --> Normal
+# Balance:     CPU --> PVS6 & GPU --> PowerSave
+# PowerSave:   CPU --> PVS6 & GPU --> PowerSaver
 

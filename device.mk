@@ -266,7 +266,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Sounds
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=MI.ogg \
+    ro.config.ringtone=Orange.ogg \
     ro.config.notification_sound=pizzicato.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg
 

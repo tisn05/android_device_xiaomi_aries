@@ -151,7 +151,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/sounds/Forest.ogg:system/media/audio/alarms/Forest.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Journey.ogg:system/media/audio/alarms/Journey.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Smooth.ogg:system/media/audio/alarms/Smooth.ogg \
-    $(LOCAL_PATH)/prebuilt/sounds/SMS.ogg:system/media/audio/notifications/SMS.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Chorus.ogg:system/media/audio/ringtones/Chorus.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Journey.ogg:system/media/audio/ringtones/Journey.ogg \
     $(LOCAL_PATH)/prebuilt/sounds/Leisure.ogg:system/media/audio/ringtones/Leisure.ogg \

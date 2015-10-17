@@ -84,8 +84,9 @@ echo 0 > /sys/module/n_smux/parameters/debug_mask
 echo 0 > /sys/module/userwakelock/parameters/debug_mask
 echo 0 > /sys/module/pm_8x60/parameters/debug_mask
 echo 0 > /sys/module/lowmemorykiller/parameters/debug_level
-echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 # entropy
 echo 128 > /proc/sys/kernel/random/read_wakeup_threshold
 echo 256 > /proc/sys/kernel/random/write_wakeup_threshold
+
+# echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 

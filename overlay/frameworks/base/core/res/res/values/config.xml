@@ -304,11 +304,6 @@
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">71</integer>
 
-    <!-- Default value for proximity check on screen wake
-         NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)
-    -->
-    <bool name="config_proximityCheckOnWake">true</bool>
-
     <integer name="config_buttonBrightnessSettingDefault">0</integer>
 
     <!-- Defines the system property to set for performance profile xe: sys.cpu.modes. Leave it

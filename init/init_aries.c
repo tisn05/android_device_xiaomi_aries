@@ -103,6 +103,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_set("ro.build.product", "aries");
     property_set("ro.product.device", "aries");
-    property_set("ro.build.description", "aries-user 5.1.1 LVY48F 5.1.1_r18 release-keys");
-    property_set("ro.build.fingerprint", "Xiaomi/aries/aries:5.1.1/LVY48F/5.1.1_r18:user/release-keys");
+    property_set("ro.build.description", "aries-user 5.1.1 LMY48Z 5.1.1_r30 release-keys");
+    property_set("ro.build.fingerprint", "Xiaomi/aries/aries:5.1.1/LMY48Z/5.1.1_r30:user/release-keys");
 }

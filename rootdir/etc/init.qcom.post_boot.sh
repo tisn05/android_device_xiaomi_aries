@@ -70,6 +70,8 @@ case "$target" in
     ;;
 esac
 
+# enable power savings
+echo 1 > /sys/devices/system/cpu/sched_mc_power_savings
 # tweak
 echo 0 > /sys/block/mmcblk0/queue/add_random
 echo 0 > /sys/block/mmcblk0/queue/iostats

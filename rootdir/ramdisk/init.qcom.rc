@@ -48,8 +48,6 @@ on init
     symlink /storage/emulated/legacy /storage/sdcard0
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
 
-    exec /sbin/syspart_select auto
-
 on fs
     mount_all ./fstab.qcom
     restorecon_recursive /persist

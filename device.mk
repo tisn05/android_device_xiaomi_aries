@@ -168,7 +168,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=0 \
     ril.subscription.types=RUIM \
-    persist.radio.apm_sim_not_pwdn=0 \
+    persist.radio.apm_sim_not_pwdn=1 \
     ro.telephony.call_ring.multiple=0
 
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -7,9 +7,9 @@ $(call inherit-product, device/xiaomi/aries/aries.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := aries
-PRODUCT_NAME := cm_aries
+PRODUCT_NAME := mk_aries
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 2
+PRODUCT_MODEL := MI 2s
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Fingerprint
